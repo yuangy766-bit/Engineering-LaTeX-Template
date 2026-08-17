@@ -145,3 +145,19 @@ Planned resources include:
 
 These templates will focus on clean formatting, readability, and practical use for internship and graduate applications.
 
+
+
+## Some Words at the End
+
+Everything in this repository started as something I made for myself.
+
+Over time, it grew into a collection of templates and resources that I found useful throughout my university journey.
+
+Now, I'd like to share them with anyone who might benefit from them.
+
+I hope this repository can make your academic life just a little bit easier.
+
+Thank you for stopping by.
+
+Have a wonderful day, and I wish you all the best in your studies and beyond. 🌱
+
