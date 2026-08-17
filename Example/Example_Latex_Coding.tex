@@ -1,0 +1,731 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage[
+  top=2.5cm,
+  bottom=2.5cm,
+  left=2.5cm,
+  right=2.5cm
+]{geometry}
+\usepackage{setspace}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{placeins}
+\usepackage{mathptmx}
+\usepackage{setspace}
+\usepackage{graphicx}   % 插入图片的宏包
+\usepackage{titling}    % 控制标题与内容距离的宏包
+\title{file title} %title of the file
+\usepackage{array}
+\usepackage{caption}
+\usepackage{tabularx}
+\usepackage{tikz}
+\usepackage{float}
+\usepackage{amsmath} 
+\usepackage{newtxtext} % Times 风格文本字体
+\usepackage{newtxmath} % Times 风格数学字体
+\usepackage{subfigure}
+\usepackage{subcaption}
+\usepackage{fancyhdr}
+\usepackage{lipsum}
+\usepackage{pdflscape}
+\usepackage{multirow}
+\usepackage[table,xcdraw]{xcolor} % 允许更多颜色选项
+\usepackage{adjustbox}
+\usepackage{makecell}
+\usepackage[style=apa,backend=biber]{biblatex}
+\DeclareLanguageMapping{english}{english-apa}
+
+\addbibresource{reference.bib}
+
+\usepackage[version=4]{mhchem}
+\usepackage[justification=centering]{caption}
+\pagestyle{fancy}
+\usepackage{sectsty}
+\sectionfont{\centering}
+\fancyhf{} % 清除默认的页眉和页脚
+\usepackage{lipsum}  % 用于生成测试文本
+\usepackage{fancyhdr}  % 页眉页脚可选（不是必须）
+\fancyhead[C]{\textcolor{gray}{\scalebox{1.5}{XIAMEN UNIVERSITY MALAYSIA}}}
+\fancyfoot[C]{\thepage} % 页脚中间显示页码
+\renewcommand{\headrulewidth}{0pt} 
+
+
+\setlength{\droptitle}{-6em}  % 减少标题与内容之间的距离
+
+
+\usepackage{indentfirst}
+
+
+\begin{document}
+
+
+
+\begin{titlepage}
+\centering
+
+\includegraphics[width=0.8\textwidth]{22.png}\\
+
+\vfill
+{\Huge\bfseries A Critical Analysis of Recent Advancements in UAV Edge Computing Systems\par}
+\vspace{0.3cm}
+
+
+\vfill
+
+{\Large\bfseries YANG YUHANG\par}
+\vspace{0.35cm}
+{\Large\bfseries EEE2309316\par}
+\vspace{0.35cm}
+{\large Programme: Electrical and Electronic Engineering\par}
+\vspace{0.35cm}
+{\large Academic Session: 202604\par}
+
+\end{titlepage}
+
+
+\onehalfspacing
+\newpage
+
+\vspace{-5em}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.3\linewidth]{厦大校徽.jpg}
+    
+\end{figure}
+
+\begin{tabular}{ll} 
+    Course Code         & : \underline{EEE305 \hspace{8.5cm}} \\ 
+    Course Name         & : \underline{Embedded Systems   \hspace{8cm}} \\ 
+    Lecturer            & : \underline{Dr. Tan Jian Ding\hspace{8cm}}   \\
+    Academic Session    & : \underline{ 202604  \hspace{9cm}} \\
+    Assessment Title    & : \underline{ Assignment (Individual Work) \hspace{6cm}} \\
+    Submission Due Date & : \underline{ 3/7/2026 \hspace{8cm}} \\
+    Prepared by         & : \\
+\end{tabular}
+
+\vspace{-2.5em}
+\begin{table}[h]
+    \hspace{13em}
+    \begin{tabular}{|>{\centering\arraybackslash}p{9em}|>{\centering\arraybackslash}p{12.5em}|}
+        \hline
+            \textbf{ Student ID} & \textbf{ Student Name }  \\  % 表头
+        \hline
+        EEE2309316 & YANG YUHANG \\  % 第一行
+        \hline
+         &   \\  % 第二行
+        \hline
+         &  \\  % 第三行
+        \hline
+         &   \\  % 第四行
+        \hline
+         & \\
+        \hline
+         & \\
+        \hline
+         & \\
+        \hline
+         & \\
+        \hline
+         & \\
+        \hline
+         & \\
+        \hline
+         & \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\begin{tabular}{ll}
+    Data Received & : \underline{\hspace{27em}} 
+\end{tabular}
+
+\begin{center}
+\begin{tikzpicture}
+    \draw[thick] (-1,0) rectangle (12.5,5);  
+    \node at (1,4.75) {Feedback from Lecturer:}; 
+    
+    \draw[thick] (12.5,0) rectangle (10.5,2);
+    ([shift={(2,0.5)}] -2, 0);
+    \node at (11, 1.5) {Mark:}
+    
+\end{tikzpicture}
+\end{center}
+
+
+    
+   
+
+
+
+\newpage
+
+\vspace{5em}
+\begin{center}
+    \textbf{ Own Work Declaration \Huge}
+\end{center}
+
+\vspace{2em}
+
+\begin{flushleft}
+    I/We hereby understand my/our work would be checked for plagiarism or other misconduct, and the softcopy would be saved for future comparison(s).\\
+    \vspace{1em}
+    I/We hereby confirm that all the references or sources of citations have been correctly listed or presented and I/we clearly understand the serious consequence caused by any intentional or unintentional misconduct. \\
+    \vspace{1em}
+    This work is not made on any work of other students (past or present), and it has not been submitted to any other courses or institutions before.\\
+    \vspace{5em}
+    Signature\\
+    \begin{figure}[htbp]
+    \centering
+    \subfigure{\includegraphics[width=0.2\textwidth]{image (2).png}}
+    \hspace{0.05\textwidth} 
+
+\end{figure}
+    \vspace{5em}
+    Date: 2 / 6 / 2026
+\end{flushleft}
+
+
+\newpage
+
+\tableofcontents
+
+\newpage
+\section*{Abstract}
+\addcontentsline{toc}{section}{1. Abstract}
+
+Unmanned Aerial Vehicles (UAVs) are now a key platform due to increasing demands in the area such as the ability to provide real-time sensing, monitoring, and intelligent services. However, handling computation-intensive and latency-sensitive applications have become a big challenge to overcome because of their limited onboard computational resources. This report presents a critical analysis of recent advances in UAV edge computing based on researches published by IEEE between 2025 and 2026. The analysis is organized according to the evolution of the main technical bottlenecks in UAV edge computing systems. First, computation offloading and resource allocation techniques are examined to address the resource constraints of individual UAVs. As computing capability improves, AI-enabled edge intelligence is introduced to enhance autonomous decision-making and system adaptability through machine learning, edge learning, and large language models. Because more functions and AI technologies are applied to UAVs, which lead to higher energy consumption, energy-efficient architectures and optimization strategies have been developed. Recent studies have also explored cooperative edge computing for multi-UAV through collaborative computing, resource sharing, and swarm intelligence, all aimed at overcoming scalability limits in single-UAV systems. In addition, security, privacy, and federated learning techniques are also examined because this is needed for reliable and trustworthy operations in interconnected UAV networks. Based on the analysis, future directions including Digital Twin-assisted UAV systems, RIS/STAR-RIS-enabled communications, and Agentic AI-powered UAV swarms are discussed.
+
+\section*{Introduction}
+\addcontentsline{toc}{section}{2. Introduction}
+
+ Unmanned Aerial Vehicles (UAVs) are now a widely used platform in the areas like environmental monitoring, disaster response, smart agriculture, surveillance, and logistics—plus Internet of Things (IoT) services. Real-time data processing and intelligent decision-making in UAV systems are in much higher demand because sensors, wireless communication technologies, and artificial intelligence (AI) have been deployed quickly. Computation-intensive and latency-sensitive tasks cannot be independently handled by UAVs due to their limited onboard computational resources, battery capacity, and communication capabilities.
+
+To get through these limitations, Mobile Edge Computing (MEC) is widely used within UAV systems. By enabling computational tasks to be processed closer to data sources, edge computing reduces communication latency, alleviates cloud network congestion, and improves service responsiveness. Consequently, UAV-assisted edge computing has become an active research area that combines wireless communications, embedded systems, artificial intelligence, optimization algorithms, and distributed computing.
+
+As UAV edge computing systems continue to evolve, new technical challenges emerge at different stages of system development. Initially, researchers focused on computation offloading and resource allocation strategies to address the limited computational capabilities of individual UAVs. With increasing computational resources, the research emphasis gradually turned to AI-enabled edge intelligence to improve autonomous perception, reasoning, and decision-making capabilities. The energy consumption challenges emerged when advanced AI techniques were applied, which then pushed forward the creation of energy-efficient edge computing architectures and optimization mechanisms. Because single-UAV systems had distinct limitations, researchers began looking into Multi-UAV Cooperative Edge Computing setups where computation, communication, and resource allocation are shared among several UAVs. With these systems becoming more interconnected and intelligent, security, privacy, and federated learning will become critical for guaranteeing reliable and trustworthy operations.
+
+This report focuses mainly on papers published by IEEE from 2025 to 2026 and presents an analysis of recent progress in UAV edge computing systems. Rather than categorizing studies according to application domains, this repoprt is organized based on the evolution of major technical bottlenecks encountered in UAV edge computing. The discussion is divided into five categories: Computation Offloading and Resource Allocation, AI-Enabled Edge Intelligence, Energy-Efficient UAV Edge Computing, Multi-UAV Cooperative Edge Computing, and Security, Privacy, and Federated Learning. The proposed methods, system architectures, optimization strategies, performance improvements, and associated trade-offs are critically evaluated and compared. Finally, future development directions involving Digital Twin technologies, RIS/STAR-RIS-assisted communications, and Agentic AI-powered UAV swarms are discussed to provide engineering insights into the next generation of UAV edge computing ecosystems.
+
+\section*{Computation Offloading and Resource Allocation}
+\addcontentsline{toc}{section}{3. Computation Offloading and Resource Allocation}
+Limited onboard computational capability of UAV platforms is one of the fundamental challenges in UAV edge computing systems. Modern UAV applications such as real-time object detection, environmental monitoring, autonomous navigation, and intelligent surveillance often require substantial computational resources and low-latency processing. Size, weight, and power constraints of UAVs limit the deployment of high-performance processors and large-capacity batteries. Executing computation-intensive tasks entirely onboard may lead to excessive processing delays, increased energy consumption, and reduced mission endurance.
+
+In response to these challenges, computation offloading has emerged as one of the earliest and most widely studied research directions in UAV edge computing. With computational tasks offloaded to nearby edge servers, ground stations, or other computing nodes, processing overhead drops and system responsiveness improves for UAVs. However, efficient task offloading introduces extra challenges: resource allocation, trajectory planning, communication reliability, service fairness, and energy consumption management. The mobility of UAVs causes frequent variations in communication conditions, network connectivity, and workload distribution, making resource allocation and optimization significantly more challenging than in conventional static MEC networks.
+
+In UAV-assisted Mobile Edge Computing (MEC) systems, recent studies have put forward a range of optimization techniques to improve task offloading performance. Deep reinforcement learning, Lyapunov optimization, multi-agent learning, and reliability-aware scheduling mechanisms have been widely used to get more efficient resource utilization while balancing latency, energy consumption, and service quality. The following subsections will critically analyze representative studies in this area and compare their proposed solutions, performance improvements, and associated trade-offs.
+
+\subsection*{Reliability-Aware Task Offloading}
+\addcontentsline{toc}{subsection}{3.1 Reliability-Aware Task Offloading}
+One of the major challenges in UAV-assisted Mobile Edge Computing (MEC) systems is keeping task execution reliable when the network conditions are changing. During flight, UAVs continuously experience changing communication conditions, dynamic network connections, and limited onboard energy resources. These factors can lead to unreliable task offloading, higher transmission latency, and service interruptions. In addition to latency and energy efficiency, reliability has become an important performance metric.
+
+To alleviate this issue, Hao \textit{et al.} (\cite{Hao2025}) proposed a reliability-aware task offloading framework for UAV-assisted edge computing networks. The authors integrated Deep Reinforcement Learning (DRL) with reliability optimization mechanisms to jointly consider communication quality, task execution success rate, and resource utilization during the offloading decision process. Most conventional task offloading approaches mainly focus on minimizing delay or energy consumption. In contrast, the proposed framework also puts system reliability into the optimization objective.
+
+Simulation results from the proposed project demonstrated that the proposed method achieved higher task completion reliability while maintaining competitive latency and energy consumption performance compared with several benchmark algorithms. The study showed that reliability-aware decision-making can significantly improve the robustness of UAV-assisted MEC systems, particularly in highly dynamic environments where communication conditions change frequently.
+
+From an engineering perspective, earlier task offloading studies mainly focused on reducing latency and energy consumption. However, for disaster monitoring, emergency response, and autonomous surveillance, completing a task successfully is often more important than achieving the lowest possible delay. Adding reliability metrics makes the optimization problem more complex and may require extra computing power for real-time decision-making. So the future research should focus on developing lightweight reliability-aware algorithms for UAVs.
+
+
+\subsection*{Joint Resource Allocation and Trajectory Optimization}
+\addcontentsline{toc}{subsection}{3.2 Joint Resource Allocation and Trajectory Optimization}
+Task offloading helps UAVs overcome their onboard computing limits, but resource allocation and flight trajectory decisions also weigh heavily on the performance of UAV-assisted MEC systems.resource allocation determines how communication bandwidth, computational resources, and transmission power get shared among users and edge servers, while trajectory planning has a direct effect on communication quality, coverage, latency, and energy consumption. Because of this, a growing number of recent studies have focused on jointly optimizing these interconnected factors instead of handling each as a separate problem.
+
+For UAV-MEC systems, Chen \textit{et al.} (\cite{Chen2025TSC}) put forward a framework that jointly optimizes trajectory and resource allocation. This project built on a Lyapunov-assisted Deep Reinforcement Learning (DRL) approach. The authors aimed to deal with the randomness of wireless communication environments, where network conditions and task requests can shift dynamically over time. By combining Lyapunov optimization with DRL, the proposed method adapts its decisions on the fly while keeping the system stable and making better use of resources. The study demonstrated significant reductions in task latency and energy consumption compared to conventional optimization strategies.
+
+Deng \textit{et al.} (\cite{Deng2025}) proposed a Lyapunov-based optimization framework that jointly considers task scheduling and UAV trajectory planning. Their work focused on balancing computational workload distribution and flight energy consumption under changing network conditions. Unlike Chen \textit{et al.}, which primarily emphasized adaptive learning-based decision making, Deng \textit{et al.} adopted a more mathematically structured optimization approach to guarantee queue stability and long-term system performance.
+
+Although both studies use Lyapunov optimization, their design perspectives are not the same. Chen \textit{et al.} integrated DRL with Lyapunov optimization, which support adaptive decision-making in highly dynamic environments. In contrast, Deng \textit{et al.} prioritized optimization stability and computational efficiency by using analytical modeling. This comparison reveals a key trade-off in UAV-assisted MEC systems. Generally, learning-based approaches provide greater adaptability and decision-making flexibility but often need more computational resources and longer training periods. However,
+analytical optimization methods may offer stronger theoretical guarantees and lower computational complexity, but can struggle to adapt when environments change rapidly.
+
+In summary, these studies show that trajectory optimization and resource allocation are tightly coupled problems in UAV-assisted MEC systems. Better system performance might be achieved if future research focuses on hybrid frameworks that combine reinforcement learning's adaptability with the stability and efficiency of mathematical optimization techniques.
+
+\subsection*{Deep Reinforcement Learning-Based Offloading Strategies}
+\addcontentsline{toc}{subsection}{3.3 Deep Reinforcement Learning-Based Offloading Strategies}
+As UAV-assisted MEC systems become increasingly dynamic and complex, traditional optimization methods often struggle to adapt to rapidly changing network conditions, user demands, and communication environments. To overcome these limitations, Deep Reinforcement Learning (DRL) has become one of the most widely adopted approaches for task offloading and resource management in recent UAV edge computing research. Unlike conventional optimization techniques that require predefined mathematical models, DRL enables UAVs to learn optimal decision-making policies through continuous interactions with the environment.
+
+Lei \textit{et al.} (\cite{Lei2025}) proposed a Boundary-Supported Actor-Critic DRL framework for joint task offloading and trajectory optimization in UAV-assisted MEC systems. The framework integrates actor-critic reinforcement learning with boundary-support mechanisms to improve convergence stability and decision accuracy. It considers communication quality, task execution delay, and UAV mobility constraints when making offloading and trajectory decisions under changing network conditions. Simulation results demonstrated improved task completion performance and reduced latency compared with conventional optimization algorithms.
+
+Several recent studies have used DRL to address different optimization problems in UAV-assisted MEC systems. Hao \textit{et al.} (\cite{Hao2025}) focused on reliability-aware task offloading, while Chen \textit{et al.} (\cite{Chen2025TSC}) combined DRL with Lyapunov optimization for resource allocation and trajectory planning. Together, these studies suggest that DRL is becoming a common approach for handling complex interactions among offloading decisions, resource allocation, reliability, and UAV mobility.
+
+Despite the advantages, DRL-based approaches still face some challenges. Deep networks training usually needs substantial
+computational resources and large amounts of training data. So convergence speed, exploration efficiency, and model generalization are still major concerns, especially when UAVs operate in highly dynamic real-world environments. This limitation becomes particularly important in safety-critical applications such as emergency response and autonomous surveillance, where incorrect decisions can have serious consequences.
+
+Nevertheless, DRL remains a suitable approach for UAV-assisted MEC systems due to its ability to handle high-dimensional optimization problems. Recent studies show a growing interest in adaptive learning-based optimization, especially for dynamic environments where fixed models may not perform well.
+
+\subsection*{Fairness-Aware Multi-UAV Offloading}
+\addcontentsline{toc}{subsection}{3.4 Fairness-Aware Multi-UAV Offloading}
+When UAV-assisted MEC systems are widely used in UAVs, the optimization goals go further than just reducing latency and energy consumption. In multi-UAV area, multiple UAVs and users have to share computational resources, communication bandwidth, and edge server capacities at the same time. Although efficiency resource allocation strategies can improve overall system performance, it may also create unfair service distribution among users. To address this issue, recent studies have considered fairness-aware optimization in UAV-assisted MEC systems.
+
+Li \textit{et al.} (\cite{Li2025DRCN}) proposed a fairness-aware joint optimization framework for three-dimensional(3D) trajectory planning and task offloading in multi-UAV edge computing systems. This method employs Multi-Agent Deep Reinforcement Learning (MADRL) to coordinate multiple UAVs while jointly optimizing service fairness, trajectory planning, and computation offloading. Unlike conventional methods, it aims to achieve a more balanced allocation of computational resources among users and UAVs.
+
+Fairness-aware optimization improves service distribution among users but introduces trade-offs in throughput and computational complexity. In multi-UAV systems, MADRL-based coordination can further increase communication and learning overhead. Nevertheless, this direction reflects a shift from purely performance-oriented optimization toward user-centric and cooperative UAV edge computing, which provides the basis for the discussion in Chapter 6.
+
+\subsection*{Discussion}
+\addcontentsline{toc}{subsection}{3.5 Discussion}
+Overall, computation offloading research in UAV-assisted MEC has evolved from reliability and resource utilization toward adaptive resource allocation, trajectory optimization, DRL-based decision-making, and multi-UAV cooperation. As UAV edge computing applications become more complex, future frameworks will need to balance learning-based intelligence, cooperative optimization, and user-centric service provisioning.
+
+\begin{table}[H]
+\centering
+\caption{Comparison of Recent Studies on Computation Offloading and Resource Allocation}
+\label{tab:offloading_comparison}
+\begin{tabular}{|p{2.5cm}|p{2.8cm}|p{3cm}|p{5cm}|}
+\hline
+\textbf{Reference} & \textbf{Research Focus} & \textbf{Method} & \textbf{Main Contribution} \\
+\hline
+Hao \textit{et al.} (\cite{Hao2025})
+&
+Reliability-aware offloading
+&
+DRL-based optimization
+&
+Improved task execution reliability under dynamic network conditions
+\\
+\hline
+
+Chen \textit{et al.} (\cite{Chen2025TSC})
+&
+Resource allocation and trajectory optimization
+&
+Lyapunov-assisted DRL
+&
+Joint optimization of resource utilization and UAV trajectory
+\\
+\hline
+
+Deng \textit{et al.} (\cite{Deng2025})
+&
+Dynamic offloading and scheduling
+&
+Lyapunov optimization
+&
+Stable task scheduling and energy-aware trajectory planning
+\\
+\hline
+
+Lei \textit{et al.} (\cite{Lei2025})
+&
+DRL-based task offloading
+&
+Boundary-supported Actor-Critic DRL
+&
+Enhanced adaptability and decision-making performance
+\\
+\hline
+
+Li \textit{et al.} (\cite{Li2025DRCN})
+&
+Fairness-aware multi-UAV offloading
+&
+Multi-Agent DRL
+&
+Balanced resource allocation and service fairness
+\\
+\hline
+
+\end{tabular}
+\end{table}
+
+
+\section*{AI-Enabled Edge Intelligence}
+\addcontentsline{toc}{section}{4. AI-Enabled Edge Intelligence}
+The rapid development of artificial intelligence has significantly transformed the design and operation of UAV-assisted edge computing systems. Early studies mainly focused on hardware limitations in computation offloading and resource allocation, while recent works have shifted toward embedding AI into edge computing architectures. The increasing applications of autonomous UAVs in surveillance, disaster response, environmental monitoring, and smart city applications has driven this shift toward AI-enabled edge computing.
+
+The following sections will examine recent developments in AI-enabled edge intelligence, focusing on LLM-based edge intelligence, lightweight AI deployment through TinyML, and collaborative edge learning frameworks for UAV-assisted edge computing systems.
+
+\subsection*{Large Language Models and Edge Intelligence}
+\addcontentsline{toc}{subsection}{4.1 Large Language Models and Edge Intelligence}
+Recent developments in artificial intelligence have expanded the capabilities of UAV edge computing systems beyond conventional optimization and tasks. Large Language Models (LLMs), originally developed for natural language processing, are increasingly being explored as decision-making engines capable of reasoning, planning, and adaptive resource management. The integration of LLMs and UAV edge computing environments represents a significant shift from reactive optimization toward cognitive intelligence.
+
+Wang \textit{et al.} (\cite{Wang2026LLM}) proposed an LLM-based QoS-aware resource allocation framework for multi-UAV cooperative edge computing networks. Unlike traditional optimization approaches that rely on predefined objective functions, the proposed framework leverages the reasoning capability of LLMs to dynamically allocate computational resources while considering quality-of-service requirements. The study demonstrated that intelligent reasoning mechanisms can improve resource utilization and service quality in highly dynamic UAV networks.
+
+Navarro \textit{et al.} (\cite{Navarro2025}) focused on deploying onboard LLMs with computer vision and reasoning for intelligent UAV work in non-terrestrial networks. Their research demonstrated that perception, reasoning, and decision-making functions can be put right into UAV platforms. Complex tasks like environmental monitoring, disaster assessment, and autonomous inspection can be better operated with those systems, and they need less help from outside control.
+
+For uncertain environments, LLM-enabled UAV systems are more flexible and adaptable than regular deep learning approaches. However, these improvements always come with some challenges such as higher computational complexity, more memory, and greater energy consumption. So efficient deployment strategies and model compression techniques remain critical research challenges. Nevertheless, the emergence of LLM-based edge intelligence indicates a transition toward cognitive UAV systems capable of autonomous reasoning and high-level decision-making.
+
+\subsection*{TinyML and Lightweight Edge Intelligence}
+\addcontentsline{toc}{subsection}{4.2 TinyML and Lightweight Edge Intelligence}
+Deploying Large Language Models and advanced deep learning frameworks on UAV platforms is still a big challenge because of limited computational resources, memory, and battery capacity, even those models that mentioned in the Chapter 4.1 offered strong reasoning and decision-making capabilities. So lightweight artificial intelligence solutions that run directly on resource-constrained UAV platforms without sacrificing acceptable performance are another key research concentration. A solution called Tiny Machine Learning (TinyML) seems promising for these problems.
+
+Yadlapalli \textit{et al.} (\cite{Yadlapalli2026}) described a training-free proxy-guided Bayesian Neural Architecture Search (NAS) framework built for UAV-constrained TinyML applications. The study aimed to design lightweight neural network architectures capable of achieving low-latency inference while satisfying strict hardware limitations. Instead of relying on computationally expensive training procedures, this framework utilizes proxy-based performance estimation and Bayesian optimization to identify efficient model architectures. According to the experimental results, this approach improved inference efficiency and reduced computational overhead compared with conventional neural architecture search methods.
+
+Farahdel \textit{et al.} (\cite{Farahdel2025}) introduced an ultra-low-power event-based surveillance framework tailored for UAV monitoring. By combining TinyML techniques with event-driven image processing, the proposed system cuts power consumption significantly while keeping object detection reliable. The study showed that lightweight AI systems have potential for long-duration UAV missions especially for energy-constrained tasks like wildfire monitoring and environmental surveillance.
+
+Minimizing computational complexity and energy use while applying intelligent functionality is a goal of the two studies. However, the two take different approaches. Yadlapalli \textit{et al.} foucused on the model architecture optimization at the algorithmic level, while Farahdel \textit{et al.} took a different route—application-level optimization using event-based sensing and low-power processing techniques. However, these studies together showed lightweight AI is achievable through both model optimization and system-level design strategies.
+
+From an engineering perspective, TinyML represents a complementary research direction to LLM-based edge intelligence. TinyML and LLMs meet different requirements in UAV edge computing systems. TinyML focuses on low-power real-time processing on resource-constrained devices, whereas LLMs provide advanced reasoning and decision-making capabilities. Future architectures may combine local lightweight inference with more complex processing at edge servers to balance intelligence, latency, and energy consumption.
+
+\subsection*{Collaborative Edge Learning and Distributed Intelligence}
+\addcontentsline{toc}{subsection}{4.3 Collaborative Edge Learning and Distributed Intelligence}
+With the development of AI models applied in multiple UAVs, new challenges in scalability, communication efficiency, and resource coordination arise.Although individual UAVs can perform lightweight inference locally, Many real-world applications need collaborative learning among multiple UAVs to improve model performance, expand sensing coverage, and enhance system adaptability. 
+
+Fan \textit{et al.} (\cite{Fan2025}) investigated a multi-UAV edge learning framework supported by hybrid Non-Orthogonal Multiple Access (NOMA) communication techniques. The study jointly optimized resource allocation and 3D UAV placement to improve learning efficiency in distributed edge environments. By integrating edge learning with cooperative UAV networks, this framework enables multiple UAVs participate in model training and information sharing while maintaining communication efficiency. Simulation results demonstrated the improvements in learning performance, resource utilization, and network scalability compared with conventional resource allocation approaches.
+
+However, collaborative learning also introduces several challenges. Frequent model updates may generate substantial communication overhead, and heterogeneous computational capabilities among UAVs can create synchronization difficulties during training. A critical design challenge is maintaining learning efficiency while keeping energy consumption minimal. Growing UAV swarm sizes will make these issues more significant over time.
+
+\subsection*{Discussion}
+\addcontentsline{toc}{subsection}{4.4 Discussion}
+The reviewed studies reveal a significant evolution in UAV edge computing research from traditional optimization-based systems toward intelligent autonomous platforms. Recent studies in LLMs have introduced reasoning and decision-making capabilities beyond conventional machine learning models, while TinyML techniques have enabled lightweight AI deployment on resource-constrained UAVs. At the same time, collaborative edge learning has extended intelligence from individual UAVs to distributed multi-UAV environments. Future UAV-assisted MEC systems may combine lightweight local inference, collaborative learning, and more advanced AI-based decision-making. However, the increasing complexity of AI models also raises concerns regarding computational cost and energy consumption. Therefore, improving the energy efficiency of AI deployment remains an important research direction.
+\begin{table}[H]
+\centering
+\caption{Comparison of Recent Studies on AI-Enabled Edge Intelligence}
+\label{tab:ai_comparison}
+\begin{tabular}{|p{2.5cm}|p{3cm}|p{3cm}|p{3cm}|}
+\hline
+\textbf{Reference} &
+\textbf{Research Focus} &
+\textbf{Method} &
+\textbf{Main Contribution}
+\\
+\hline
+
+Wang \textit{et al.} (\cite{Wang2026LLM})
+&
+LLM-based edge intelligence
+&
+LLM-assisted resource allocation
+&
+QoS-aware intelligent decision making
+\\
+\hline
+
+Navarro \textit{et al.} (\cite{Navarro2025})
+&
+On-board reasoning
+&
+LLM + Vision
+&
+Autonomous perception and reasoning
+\\
+\hline
+
+Yadlapalli \textit{et al.} (\cite{Yadlapalli2026})
+&
+TinyML optimization
+&
+Bayesian NAS
+&
+Low-latency lightweight AI deployment
+\\
+\hline
+
+Farahdel \textit{et al.} (\cite{Farahdel2025})
+&
+Low-power surveillance
+&
+TinyML + Event-based sensing
+&
+Ultra-low-power intelligent monitoring
+\\
+\hline
+
+Fan \textit{et al.} (\cite{Fan2025})
+&
+Collaborative edge learning
+&
+Hybrid NOMA + Edge Learning
+&
+Distributed intelligence and scalable learning
+\\
+\hline
+
+\end{tabular}
+\end{table}
+
+\section*{Energy-Efficient UAV Edge Computing}
+\addcontentsline{toc}{section}{5 Energy-Efficient UAV Edge Computing}
+The integration of advanced artificial intelligence, edge learning, and collaborative computing has significantly improved the capabilities of UAV-assisted edge computing systems. However, these applications also introduce substantial energy consumption challenges. Unlike conventional ground-based edge servers, UAVs operate under strict battery limitations that directly affect flight duration, communication capability, and computational performance. So, energy efficiency has become one of the most critical design objectives in modern UAV edge computing research.
+
+Energy consumption in UAV-assisted MEC systems originates from multiple sources, including wireless communication, task execution, data transmission, and flight operations. In many UAV-assisted MEC systems, flight energy consumption is significantly higher than computing energy consumption. Therefore, only optimizing computation is often insufficient for reducing overall system energy use. Recent studies have increasingly focused on jointly optimizing task offloading, resource allocation, communication scheduling, and UAV trajectories to improve overall energy efficiency.
+
+Recent studies have explored various approaches to improve energy efficiency in UAV-assisted MEC systems. These approaches include communication optimization, intelligent trajectory planning, resource allocation, and RIS-assisted wireless architectures. The following studies examine how these techniques reduce energy consumption while maintaining system performance.
+
+\subsection*{Energy-Efficient Resource Allocation}
+\addcontentsline{toc}{subsection}{5.1 Energy-Efficient Resource Allocation}
+One of the most direct approaches to reducing energy consumption in UAV-assisted MEC systems is improving resource allocation efficiency. Because communication, computation, and transmission resources are tightly coupled, inefficient resource management can cause too much energy use and shorter mission endurance.
+
+An energy-efficient UAV-assisted MEC framework that jointly considers secure communication, transmission reliability, and resource allocation was proposed by Wang \textit{et al.} \cite{Wang2026Energy}. Security and reliability constraints were incorporated directly into the energy optimization process by the authors, unlike traditional work that focuses mostly on cutting latency. The proposed framework achieved improved energy efficiency while maintaining reliable data transmission.
+
+The study highlights an important trend in UAV edge computing research. Energy efficiency can no longer be treated as an isolated optimization objective. Instead, modern UAV systems must simultaneously satisfy security, reliability, and quality-of-service requirements. Practical applicability gets a boost from these multi-objective optimization frameworks, but they also bring higher computational complexity and harder optimization problems. Therefore future research should investigate lightweight optimization algorithms capable of balancing multiple system objectives without significantly increasing computational overhead.
+
+\subsection*{Communication-Aware Energy Optimization}
+\addcontentsline{toc}{subsection}{5.2 Communication-Aware Energy Optimization}
+Except computation resources, communication strategies play a significant role in determining overall system energy consumption. Different multiple-access mechanisms directly influence transmission efficiency, communication delay, and resource utilization within UAV-assisted MEC systems.
+
+A comprehensive comparison of three popular communication schemes—NOMA, FDMA, and TDMA—within UAV-enabled MEC environments was done by Wu \textit{et al.} \cite{Wu2026NOMA}. This paper investigated how different multiple-access techniques affect energy consumption under various communication conditions and task requirements. This work provides valuable engineering insights because it emphasizes the importance of communication-aware optimization rather than relying solely on computational optimization. 
+The results showed that NOMA generally improves spectrum utilization and supports more simultaneous connections and it may also introduce additional decoding complexity. Simpler implementations come with FDMA and TDMA, but resource utilization efficiency may be sacrificed. Balancing energy consumption, implementation complexity, and communication performance is needed when selecting an appropriate communication strategy.
+
+\subsection*{RIS-Assisted Energy-Efficient Edge Computing}
+\addcontentsline{toc}{subsection}{5.3 RIS-Assisted Energy-Efficient Edge Computing}
+Reconfigurable Intelligent Surfaces (RIS) and Simultaneously Transmitting and Reflecting RIS (STAR-RIS) have recently emerged because of advances in wireless communication. By intelligently controlling propagation environments, RIS-based systems help improve communication quality while cutting down on transmission energy.
+
+Mohammadi \textit{et al.} (\cite{Mohammadi2026}) proposed energy minimization in STAR-RIS-assisted UAV-MEC networks that use NOMA. Their framework jointly optimized task offloading, resource allocation, and STAR-RIS configuration to reduce overall system energy consumption. The results demonstrated that intelligent wireless environment control can significantly improve communication efficiency and reduce energy expenditure.
+
+Zhang \textit{et al.} (\cite{Zhang2026RIS}) proposed an RIS-assisted MEC architecture combined with backscatter communication. With passive communication and intelligent signal reflection, the system has higher energy efficiency without sacrificing communication performance.
+
+Their researches together demonstrated that RIS-based approaches have a unique advantage over conventional communication architectures. However some practical deployment challenges like hardware cost, configuration complexity, and real-time control requirements are still remain. RIS and STAR-RIS technologies are still widely considered as important enablers for future UAV edge computing systems.
+
+\subsection*{Energy-Efficient Multi-UAV Systems}
+\addcontentsline{toc}{subsection}{5.4 Energy-Efficient Multi-UAV Systems}
+As UAV edge computing systems scale up, energy optimization has to be extended from single UAV platforms to collaborative multi-UAV environments. In these systems, UAVs cooperate on sensing, communication, and computation tasks, which introduces extra challenges with resource coordination, trajectory planning, and workload distribution. Because of that, recent work has put more focus on energy-efficient optimization strategies for UAV swarms and multi-UAV edge computing setups.
+
+Maleki \textit{et al.} (\cite{Maleki2026}) proposed energy-efficient offloading approaches for Beyond-5G MEC-enabled UAV swarms using multi-agent cooperative reinforcement learning. The framework jointly optimized computation offloading and resource allocation decisions across multiple UAVs while considering communication constraints and energy consumption. According to the paper, cooperative learning boosted system-wide energy efficiency compared with conventional single-agent optimization approaches. Across large-scale UAV edge computing environments, the study pointed to clear benefits from collaborative decision-making.
+
+Zhang \textit{et al.} (\cite{Zhang2026Safe}) proposed a safe and energy-efficient trajectory planning design for heterogeneous multi-UAV MEC systems. The proposed approach accounted for operational safety, job scheduling, resource allocation, and cooperative flight planning together. By integrating safe reinforcement learning into the optimization process, the framework achieved a balance between energy efficiency and operational reliability.
+
+The two studies illustrate an important shift in energy optimization research. Instead of looking at whole systems, earlier work mostly cut individual UAV energy use with local tweaks. Recent studies push for system-wide energy efficiency built on cooperation between multiple UAVs. This transition reflects the growing complexity of UAV edge computing applications, where overall network performance often depends more on coordination efficiency than on the capabilities of individual UAVs.
+
+For engineers, energy optimization in multi-UAV setups brings new challenges like communication overhead, tricky synchronization, and scaling problems. Even with those, cooperative optimization is still regarded as the best bet for longer missions and better resource uses down the road in UAV edge computing networks. As UAV swarm sizes continue to increase, intelligent coordination mechanisms will become essential for maintaining both energy efficiency and system performance.
+
+\subsection*{Discussion}
+\addcontentsline{toc}{subsection}{5.5 Discussion}
+The reviewed studies demonstrate that energy efficiency remains one of the most critical challenges in UAV-assisted edge computing systems. Recent studies have expanded beyond conventional resource allocation and computation offloading optimization to include communication-aware designs, RIS-assisted wireless architectures, and cooperative multi-UAV optimization frameworks. Even with big gains from better optimization algorithms and smarter communication technologies, power consumption still holds back how long UAV networks can operate and how well they scale. As more multi-UAV systems get adopted, future work on energy optimization will likely shift toward system-wide coordination and shared resource management instead of just making each UAV more efficient.
+
+\begin{table*}[ht]
+\centering
+\caption{Comparison of Recent Studies on Energy-Efficient UAV Edge Computing}
+\label{tab:energy_comparison}
+\begin{tabular}{|p{2.5cm}|p{3cm}|p{3cm}|p{3cm}|}
+\hline
+\textbf{Reference} &
+\textbf{Research Focus} &
+\textbf{Method} &
+\textbf{Main Contribution}
+\\
+\hline
+
+Wang \textit{et al.} (\cite{Wang2026Energy})
+&
+Resource allocation
+&
+Joint optimization
+&
+Energy-efficient and secure MEC operation
+\\
+\hline
+
+Wu \textit{et al.} (\cite{Wu2026NOMA})
+&
+Communication efficiency
+&
+NOMA/FDMA/TDMA comparison
+&
+Communication-aware energy optimization
+\\
+\hline
+
+Mohammadi \textit{et al.} (\cite{Mohammadi2026})
+&
+STAR-RIS-assisted MEC
+&
+NOMA + STAR-RIS
+&
+Reduced transmission energy consumption
+\\
+\hline
+
+Zhang \textit{et al.} (\cite{Zhang2026RIS})
+&
+RIS-assisted MEC
+&
+RIS + Backscatter
+&
+Improved energy efficiency through intelligent signal control
+\\
+\hline
+
+Maleki \textit{et al.} (\cite{Maleki2026})
+&
+Multi-UAV energy optimization
+&
+Multi-agent reinforcement learning
+&
+Cooperative energy-efficient task offloading
+\\
+\hline
+
+Zhang \textit{et al.} (\cite{Zhang2026Safe})
+&
+Multi-UAV trajectory planning
+&
+Safe reinforcement learning
+&
+Joint optimization of safety and energy efficiency
+\\
+\hline
+
+\end{tabular}
+\end{table*}
+
+
+
+\section*{Security, Privacy and Federated Learning}
+\addcontentsline{toc}{section}{6 Security, Privacy and Federated Learning}
+As UAV edge computing systems get smarter and more connected, their computational capabilities and use cases have grown a lot. But these upgrades bring huge problems around security, privacy, and trustworthiness. Modern UAV-assisted MEC systems are always collecting, processing, and swapping big amounts of sensitive data—surveillance footage, environmental readings, user details, and even critical mission information. So protecting these systems from cyber threats, privacy leaks, and malicious attacks is now a basic research need.
+
+In traditional centralized learning and computation architectures, raw data usually has to get sent to edge servers or cloud platforms for processing. Data exposure and unauthorized access become more likely with such approaches. To address these challenges, researchers have increasingly adopted federated learning, privacy-preserving optimization, secure communication mechanisms, and security-aware resource management strategies.
+
+\subsection*{Federated Learning for UAV Edge Computing}
+\addcontentsline{toc}{subsection}{6.1 Federated Learning for UAV Edge Computing}
+When it comes to addressing privacy concerns in UAV-assisted edge computing systems, Federated Learning (FL) has been considered as one of the more promising approaches. In contrast to centralized learning, FL allows multiple devices to collaboratively train machine learning models without transmitting raw data to a central server. By exchanging model parameters or gradients instead of local datasets, FL reduces the risk of data exposure while maintaining collaborative learning capability.
+
+Cheriguene \textit{et al.} (\cite{Cheriguene2025}) concluded a broad survey of federated learning technologies in UAV-assisted MEC systems. The key challenges the paper pointed out were communication efficiency, client heterogeneity, mobility management, model convergence, and privacy preservation. This survey positioned federated learning as a key technology for future intelligent UAV networks, especially in the applications that tied to sensitive data collection and distributed intelligence.
+
+In UAV environments, the adoption of federated learning is the attractive—UAVs that often work in spread-out locations and gather privacy-sensitive information. With raw data kept in local address and collaborative model training still possible, federated learning strikes a workable balance between intelligence and privacy protection. However, communication overhead, non-independent data distributions, and dynamic network topologies are still problems that keep researchers busy.
+
+\subsection*{Privacy-Preserving Federated Intelligence}
+\addcontentsline{toc}{subsection}{6.2 Privacy-Preserving Federated Intelligence}
+Although federated learning improves privacy protection, standard FL frameworks could be in trouble when UAVs have different distributions of data and various computational abilities. Because of that, researchers have been putting more efforts into personalized and privacy-enhanced federated learning mechanisms.
+
+Chien \textit{et al.} (\cite{Chien2025}) put forward a density-clustering aggregation framework for personalized federated learning in AI-enabled aerial and edge computing systems. This method they proposed pushed up both model personalization and learning accuracy, and kept federated learning's privacy benefits intact at the same time. This study showed that personalized aggregation strategies can solve data heterogeneity problems in distributed UAV environments.
+
+Dai \textit{et al.} (\cite{Dai2026}) recently introduced PQ-FRL, a privacy-preserving and quality-aware federated reinforcement learning framework built for UAV-assisted edge computing. This system integrated differential privacy mechanisms with federated reinforcement learning to protect sensitive information and maintain learning quality. According to experimental results, privacy-preserving learning is achievable without substantial performance degradation.
+
+These studies together showed that an evolution of federated learning shifts from simple distributed model training moving toward privacy-aware and personalized intelligence frameworks. Such developments are essential for enabling trustworthy AI deployment in future UAV edge computing systems.
+
+\subsection*{Security-Aware Edge Computing Architectures}
+\addcontentsline{toc}{subsection}{6.3 Security-Aware Edge Computing Architectures}
+Except privacy preservation, another major concern in UAV-assisted MEC systems is securing communication and computation processes. Due to their wireless communication links and distributed architecture, UAV networks are vulnerable to eavesdropping, jamming attacks, and malicious interference.
+
+Wu \textit{et al.} (\cite{Wu2025Security}) proposed a security-aware framework that UAV deployment, task offloading, and service placement in edge computing networks can be jointly optimized. The study incorporated cooperative jamming mechanisms and security considerations directly into the resource optimization process. The results showed security-aware optimization can improve system resilience effectively while keeping computational performance satisfactory.
+
+Zhao \textit{et al.} (\cite{Zhao2025SecureTransmission}) focused on secure transmission and computation scheduling in UAV-assisted MEC networks under mobile collusive eavesdropping attacks. The researchers assumed multiple coordinated eavesdroppers could share intercepted information, which is different from conventional security models that assume independent attackers. Their framework jointly optimized communication security and computation scheduling; secrecy performance and transmission reliability improved significantly.
+
+A growing trend in the literature is to build security requirements directly into UAV edge computing architectures. Modern research embeds security considerations into communication protocols, computation scheduling strategies, and resource allocation frameworks instead of treating security as an external protection layer.
+
+\subsection*{Privacy-Preserving Incentive Mechanisms}
+\addcontentsline{toc}{subsection}{6.4 Privacy-Preserving Incentive Mechanisms}
+As federated learning being more effective, devices must be willing to contribute both computational resources and training data. When privacy risks outweigh the potential gains, UAV operators may be unwilling to participate. Therefore incentive mechanisms have attracted increasing attention in privacy-preserving edge intelligence.
+
+Xie \textit{et al.} (\cite{Xie2025Privacy}) proposed a privacy-preserving incentive scheme for UAV-aided federated learning using contract theory and prospect theory. This approach encourages UAV participation while protecting sensitive information and accounting for uncertain behavior of users. The results demonstrated that appropriately designed incentive mechanisms can improve participation rates, learning performance, and privacy protection. This study highlights that economic incentives, trust mechanisms, and user participation strategies are equally important components of future intelligent UAV ecosystems.
+
+\subsection*{Discussion}
+\addcontentsline{toc}{subsection}{6.5 Discussion }
+The reviewed studies demonstrate that security and privacy have become essential design requirements in modern UAV edge computing systems. Recent research has progressed from traditional communication security mechanisms toward privacy-preserving distributed intelligence frameworks enabled by federated learning. Security is being woven directly into the design of computation offloading, resource allocation, and collaborative learning architectures. Communication overhead, trust management, adversarial attacks, and balancing privacy with performance still can not solved all problems. As UAV-assisted MEC systems become larger and more autonomous, security and privacy challenges are expected to become increasingly important. Therefore, future research directions in UAV edge computing will be discussed in the following chapter.
+
+\begin{table*}[ht]
+\centering
+\caption{Comparison of Recent Studies on Security, Privacy and Federated Learning}
+\label{tab:security_comparison}
+\begin{tabular}{|p{2.5cm}|p{3cm}|p{3cm}|p{3cm}|}
+\hline
+\textbf{Reference} &
+\textbf{Research Focus} &
+\textbf{Method} &
+\textbf{Main Contribution}
+\\
+\hline
+
+Cheriguene \textit{et al.} (\cite{Cheriguene2025})
+&
+Federated learning survey
+&
+Comprehensive review
+&
+Identified challenges and future opportunities
+\\
+\hline
+
+Chien\textit{et al.} (\cite{Chien2025})
+&
+Personalized FL
+&
+Density-clustering aggregation
+&
+Improved learning accuracy under heterogeneous data
+\\
+\hline
+
+Dai \textit{et al.}. (\cite{Dai2026})
+&
+Privacy-preserving FRL
+&
+Differential Privacy + FRL
+&
+Enhanced privacy without significant performance loss
+\\
+\hline
+
+Wu \textit{et al.} (\cite{Wu2025Security})
+&
+Security-aware MEC
+&
+Cooperative jamming
+&
+Secure deployment and service placement
+\\
+\hline
+
+Zhao \textit{et al.} (\cite{Zhao2025SecureTransmission})
+&
+Anti-eavesdropping communication
+&
+Secure transmission scheduling
+&
+Improved secrecy and communication reliability
+\\
+\hline
+
+Xie \textit{et al.} (\cite{Xie2025Privacy})
+&
+Privacy-preserving incentives
+&
+Contract theory
+&
+Improved participation and privacy protection
+\\
+\hline
+
+\end{tabular}
+\end{table*}
+
+\section*{Future Directions}
+\addcontentsline{toc}{section}{7 Future Directions}
+From the analysis in earlier chapters, UAV-assisted edge computing has seen fast developments in the area like computation offloading, artificial intelligence, energy optimization, multi-UAV collaboration, and privacy-preserving learning. Several key challenges remain unresolved, limiting the large-scale deployment of autonomous UAV edge computing systems. Future research should focus on improving scalability, intelligence, energy efficiency, and system reliability.
+
+\subsection*{Toward Digital Twin-Driven UAV Edge Computing}
+\addcontentsline{toc}{subsection}{7.1 Toward Digital Twin-Driven UAV Edge Computing}
+One of the major challenges in current UAV edge computing systems is the lack of accurate real-time system awareness and predictive decision-making capabilities. Most existing optimization frameworks rely heavily on instantaneous network conditions and reactive control mechanisms. As UAV networks become larger and more complex, such approaches may struggle to maintain efficient coordination and resource utilization.
+
+Digital Twin technology offers a promising solution by creating continuously synchronized virtual replicas of physical UAV systems. Through real-time monitoring, simulation, and predictive optimization, Digital Twins enables UAV networks to evaluate multiple operational strategies before executing in real environments. The potential of Digital Twin-assisted UAV edge computing for improving resource allocation, trajectory optimization, and collaborative computing efficiency has been demonstrated by recent studies (\cite{Qiao2025DigitalTwin,Wang2025DigitalTwinSky}).
+
+Future research should focus on lightweight Digital Twin architectures, real-time synchronization mechanisms, and scalable Digital Twin platforms are capable of supporting large UAV swarms. Reliability and adaptability of future UAV edge computing systems could be significantly improved by such developments.
+
+\subsection*{RIS-Assisted Intelligent Communication Architectures}
+\addcontentsline{toc}{subsection}{7.2 RIS-Assisted Intelligent Communication Architectures}
+Communication efficiency still acts as a major bottleneck in UAV-assisted MEC systems. Although recent optimization methods have improved resource allocation and transmission performance, wireless communication quality remains vulnerable to interference, blockage, dynamic network topology, and changing environmental conditions.
+
+Reconfigurable Intelligent Surfaces (RIS) and STAR-RIS technologies have been proposed recently as potential ways to improve wireless communication performance by intelligently controlling how radio waves move through the environment. Earlier work has shown that RIS-assisted UAV edge computing can cut communication energy use, boost spectrum utilization, and improve task offloading performance (\cite{Yan2025RIS,Liu2026STARRIS,Zhao2026RISSurvey}).
+
+Future UAV edge computing systems are likely to integrate RIS technologies with edge intelligence and reinforcement learning algorithms to achieve fully adaptive communication environments. Such intelligent communication architectures may become a key enabling technology for Beyond-5G and 6G UAV networks.
+
+\subsection*{Agentic AI and Autonomous UAV Swarms}
+\addcontentsline{toc}{subsection}{7.3 Agentic AI and Autonomous UAV Swarms}
+Recent advances in Large Language Models and autonomous intelligent agents indicate a significant shift toward cognitive UAV systems capable of high-level reasoning and autonomous decision-making. Although current UAV intelligence is mostly about perception, optimization, and task execution, future systems would have planning, collaboration, and self-adaptation capabilities.
+
+With Agentic AI, autonomous UAV swarms are possible to understand mission objectives, generate action plans, coordinate with other UAVs, and adapt to dynamic environments without human operation. Some recent work has proposed Agentic AI frameworks integrated with UAV edge computing infrastructures \cite{Nguyen2026AgenticAI}.
+
+However, challenges around computational complexity, trustworthiness, explainability, and safety assurance are still not solved. Future Research should focus on efficient deployment, multi-agent coordination protocols, and safety-aware autonomous decision-making frameworks to make systems work reliably in real settings.
+
+\subsection*{Engineering Perspective}
+\addcontentsline{toc}{subsection}{7.4 Engineering Perspective}
+From an engineering perspective, the future of UAV edge computing will be likely involve the convergence of three key technologies: Digital Twins, RIS-assisted intelligent communication, and Agentic AI. Real-time system awareness and predictive optimization come from Digital Twins, communication efficiency is boosted by RIS technologies, and Agentic AI makes autonomous decision-making and collaborative intelligence possible.
+
+Rather than developing these technologies independently, future research should focus on their integration into unified UAV edge computing ecosystems. Large-scale autonomous UAV swarms that can do efficient computation, intelligent collaboration, adaptive communication, and reliable operation in highly dynamic environments may be supported by such systems. In next-generation smart cities, disaster response systems, industrial inspection, environmental monitoring, and future 6G-enabled aerial networks, these capabilities are expected to be important.
+
+\section*{Conclusion}
+\addcontentsline{toc}{section}{8.Conclusion}
+This report has presented a critical analysis of recent advancements in UAV-assisted edge computing based on representative studies published between 2025 and 2026. The analysis was organized according to the major technical bottlenecks encountered during the evolution of UAV edge computing systems, including computation offloading and resource allocation, AI-enabled edge intelligence, energy-efficient system design, multi-UAV cooperative computing, and security and privacy preservation.
+
+The review demonstrates that UAV edge computing has evolved beyond its original objective of overcoming onboard computational limitations. Early research primarily focused on computation offloading and resource optimization to improve task execution efficiency. As AI technologies advanced quickly, machine learning, deep reinforcement learning, TinyML, and Large Language Models got integrated into UAV edge computing architectures by researchers to support autonomous perception, reasoning, and decision-making. However these improvements lead to higher energy consumption and unreliable system scalability. These challenges pushed forward the development of energy-aware optimization strategies and collaborative multi-UAV computing frameworks.
+
+With distributed intelligence and cooperative UAV networks more widely used, security, privacy protection, and federated learning became more important. A clear trend appears in recent studies is that integrate security and privacy mechanisms directly into edge computing architectures instead of treating them as separate components. For trustworthy and reliable UAV operations in real-world settings, those developments are necessary.
+
+Based on all of the analysis, future UAV edge computing systems are more likely to become highly intelligent, collaborative, and autonomous ecosystems. Digital Twin technologies will provide predictive system awareness and optimization capabilities, and RIS-assisted communication architectures will lead to more efficient wireless communication. At the same time, agentic AI enables autonomous reasoning and cooperative decision-making among UAV swarms. With the development of smart cities, disaster response, industrial inspection, environmental monitoring, and future 6G-enabled networks, these technologies should converge to push next-generation UAV applications forward.
+\newpage
+
+\addcontentsline{toc}{section}{9 Appendix}
+\addcontentsline{toc}{subsection}{9.1 References}
+\addcontentsline{toc}{subsection}{9.2 Rubrics}
+\printbibliography
+
+
+
+\end{document}
